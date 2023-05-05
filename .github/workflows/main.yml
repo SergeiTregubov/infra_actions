@@ -31,11 +31,7 @@ jobs:
         cd infra_project/
         # запустить написанные разработчиком тесты
         python manage.py test
-        # .github/workflows/main.yml
-        # .github/workflows/main.yml
 
-# Тут ваши задачи тестирования и сборки образа
-# ...
 # Сразу после них добавьте новую задачу: деплой приложения
   build_and_push_to_docker_hub:
     name: Push Docker image to Docker Hub
