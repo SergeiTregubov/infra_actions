@@ -5,7 +5,7 @@
 
 Клонируем репозиторий и переходим в него:
 ```bash
-git clone https://github.com/themasterid/infra_sp2
+git clone https://github.com/SergeiTregubov/infra_actions.git
 ```
 Создаем и активируем виртуальное окружение:
 ```bash
