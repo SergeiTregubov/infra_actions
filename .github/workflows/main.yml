@@ -20,7 +20,6 @@ jobs:
         # установка flake8 и его плагинов
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
         # установка зависимостей
-        # cd infra_project/
         pip install -r requirements.txt 
 
     - name: Test with flake8 and django tests
@@ -29,9 +28,10 @@ jobs:
         python -m flake8
         # перейти в папку, содержащую manage.py — 
         #<корневая_папка_infra_actions>/<папка_проекта>/manage.py
+        cd infra_actions>/infra_project/manage.py
         # cd infra_project/
-        # # # запустить написанные разработчиком тесты
-        # # python manage.py test
+        # запустить написанные разработчиком тесты
+        python manage.py test
 
 # Сразу после них добавьте новую задачу: деплой приложения
   # build_and_push_to_docker_hub:
